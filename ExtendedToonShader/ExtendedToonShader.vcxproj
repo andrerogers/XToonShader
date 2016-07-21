@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{542B1668-0A21-45E7-AB10-83D290219EFA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ExtendedToonShader</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glui32.lib;glew32d.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ModelLoader.cpp" />
+    <ClCompile Include="Obj Loader\list.cpp" />
+    <ClCompile Include="Obj Loader\objLoader.cpp" />
+    <ClCompile Include="Obj Loader\obj_parser.cpp" />
+    <ClCompile Include="Obj Loader\string_extra.cpp" />
+    <ClCompile Include="PickingRay.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="ModelLoader.h" />
+    <ClInclude Include="Obj Loader\list.h" />
+    <ClInclude Include="Obj Loader\objLoader.h" />
+    <ClInclude Include="Obj Loader\obj_parser.h" />
+    <ClInclude Include="Obj Loader\string_extra.h" />
+    <ClInclude Include="PickingRay.h" />
+    <ClInclude Include="Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aerial.frag" />
+    <None Include="aerial.vert" />
+    <None Include="backlighting.frag" />
+    <None Include="backlighting.vert" />
+    <None Include="dof.frag" />
+    <None Include="dof.vert" />
+    <None Include="sobel.frag" />
+    <None Include="sobel.vert" />
+    <None Include="specularHighlights.frag" />
+    <None Include="specularHighlights.vert" />
+    <None Include="tex.tga" />
+    <None Include="textureBox.frag" />
+    <None Include="textureBox.vert" />
+    <None Include="Textures\texBacklighting_01.tga" />
+    <None Include="Textures\texBacklighting_02.tga" />
+    <None Include="Textures\texBacklighting_03.tga" />
+    <None Include="Textures\texBacklighting_04.tga" />
+    <None Include="Textures\texBacklighting_05.tga" />
+    <None Include="Textures\texBacklighting_06.tga" />
+    <None Include="Textures\texDof_01.tga" />
+    <None Include="Textures\texDof_02.tga" />
+    <None Include="Textures\texDof_03.tga" />
+    <None Include="Textures\texDof_04.tga" />
+    <None Include="Textures\texDof_05.tga" />
+    <None Include="Textures\texDof_06.tga" />
+    <None Include="Textures\texSpecular_01.tga" />
+    <None Include="Textures\texSpecular_02.tga" />
+    <None Include="Textures\texSpecular_03.tga" />
+    <None Include="Textures\texSpecular_04.tga" />
+    <None Include="Textures\texSpecular_05.tga" />
+    <None Include="Textures\texSpecular_06.tga" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

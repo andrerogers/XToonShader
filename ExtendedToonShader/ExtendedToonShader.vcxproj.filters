@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Obj Loader">
+      <UniqueIdentifier>{5562d69c-8f36-4ca7-963d-6c75aefde777}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures">
+      <UniqueIdentifier>{a57ca1d5-08ed-4720-a1a0-cb7cf29d3482}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Obj Loader\list.cpp">
+      <Filter>Obj Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj Loader\obj_parser.cpp">
+      <Filter>Obj Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj Loader\objLoader.cpp">
+      <Filter>Obj Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj Loader\string_extra.cpp">
+      <Filter>Obj Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PickingRay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Obj Loader\list.h">
+      <Filter>Obj Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj Loader\obj_parser.h">
+      <Filter>Obj Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj Loader\objLoader.h">
+      <Filter>Obj Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj Loader\string_extra.h">
+      <Filter>Obj Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PickingRay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tex.tga" />
+    <None Include="dof.frag" />
+    <None Include="dof.vert" />
+    <None Include="backlighting.frag" />
+    <None Include="backlighting.vert" />
+    <None Include="specularHighlights.frag" />
+    <None Include="specularHighlights.vert" />
+    <None Include="Textures\texBacklighting_01.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texBacklighting_02.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texBacklighting_03.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texBacklighting_04.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texBacklighting_05.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texBacklighting_06.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texDof_01.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texDof_02.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texDof_03.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texDof_04.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texDof_05.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texDof_06.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texSpecular_01.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texSpecular_02.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texSpecular_03.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texSpecular_04.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texSpecular_05.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\texSpecular_06.tga">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="textureBox.frag" />
+    <None Include="textureBox.vert" />
+    <None Include="sobel.frag" />
+    <None Include="sobel.vert" />
+    <None Include="aerial.frag" />
+    <None Include="aerial.vert" />
+  </ItemGroup>
+</Project>
